@@ -1,0 +1,188 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Pagina de Inicio */
+.header__ppal{
+    background-color: #576F72 /* #F6E3C5 */;
+    position: sticky;
+    top: 0px;
+}
+.header__nav{
+    display: flex;
+    flex-direction: column;
+}
+.header__ul{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.header__li{
+    list-style: none;
+    font-family: 'Arima', cursive;
+    color: rgb(0, 0, 0);
+}
+.header__li a{
+    /* color: whitesmoke; */
+    text-decoration: none;
+    font-family: 'Arima', cursive;
+    color: rgb(0, 0, 0);
+}
+.main__ppal{
+    display: flex;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #7D9D9C;
+}
+.main__entrada{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main__titulosppal{
+    width: 300px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+}
+.main__titulosinfo{
+    width: 80%;
+    text-align: center;
+}
+.main__img{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+/* Pagina de biblioteca */
+.main__ppal-biblio{
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    background-color: #7D9D9C;
+    flex-direction: column;
+
+}
+.main__biblio{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.main__generos{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+}
+.main__img-biblio{
+    width: 300px;
+    height: 250px;
+}
+/* Pagina de Musica */
+.main__ppal-musica{
+    display: flex;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #7D9D9C;
+    flex-direction: column;
+}
+.main__musica{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mainmusica__titulos{
+    margin-top: 20px;
+}
+.mainmusica__playlist{
+    width: 520px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+}
+/* Pagina Sobre Nosotros */
+.main__sobrenos{
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    background-color: #7D9D9C;
+    flex-direction: column;
+    align-items: center;
+}
+.sobrenos__seccion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sobrenos__articulo{
+    display: flex;
+}
+.sobrenos__info{
+    text-align: justify;
+
+}
+.sobrenos__img{
+    width: 450px;
+    height: 450px;
+    margin-right: 20px;
+}
+
+/* Pagina de Contacto */
+.main__contacto{
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    background-color: #7D9D9C;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contacto__entrada{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contacto__contenido{
+/*     border: black solid 2px; */
+    width: 620px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
+
+}
+.main__form{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Footer en Comun */
+.footer__ppal{
+    background-color: #576F72;
+}
+.footer__logos{
+    width: 25px;
+    color: whitesmoke;
+}
+.footer__derechos{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+/* font-family: 'Arima', cursive;
+font-family: 'Open Sans', sans-serif; */
+/* MEDIA QUERIE PARA CELULAR */
+@media (min-width:320px) and (max-width:575px){
+    .header__ul{
+        flex-direction: column;
+        flex-grow: 0;
+    }
+}
+/* MEDIA QUERIE PARA TABLET */
+@media (min-width:576px) and (max-width:992px){
+
+}
