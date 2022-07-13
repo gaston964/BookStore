@@ -5,7 +5,7 @@
 }
 /* Pagina de Inicio */
 .header__ppal{
-    background-color: #576F72 /* #F6E3C5 */;
+    background-color: #3b9eac /* #F6E3C5 */;
     position: sticky;
     top: 0px;
 }
@@ -23,6 +23,7 @@
     list-style: none;
     font-family: 'Arima', cursive;
     color: rgb(0, 0, 0);
+    font-weight:  bolder;
 }
 .header__li a{
     /* color: whitesmoke; */
@@ -34,7 +35,8 @@
     display: flex;
     color: black;
     font-family: 'Open Sans', sans-serif;
-    background-color: #7D9D9C;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, white, grey);
 }
 .main__entrada{
     display: flex;
@@ -213,6 +215,7 @@
 /* Footer en Comun */
 .footer__ppal{
     background-color: #576F72;
+    background-image: linear-gradient(to bottom, grey,rgb(17, 17, 17));
 }
 .footer__logos{
     width: 25px;
