@@ -50,6 +50,9 @@
     align-items: center;
     border: 2px solid;
 }
+.main__titulosppal:hover{
+    transform: scale(1.05, 1.05);
+}
 .main__titulosinfo{
     width: 80%;
     text-align: center;
