@@ -8,6 +8,7 @@
     background-color: #3b9eac /* #F6E3C5 */;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 .header__nav{
     display: flex;
