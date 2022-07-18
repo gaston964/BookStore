@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../resources/logo.ico" type="image/x-icon">
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!-- Fuentes Google -->
@@ -19,7 +19,52 @@
 </head>
 <body>
     <header class="header__ppal">
-        <nav class="header__nav">
+        <nav class="navbar navbar-expand-lg" style="background-color: #d4d5d6;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/logo.ico" alt="" width="30" height="24">
+                    BookStore
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biblioteca.html">Biblioteca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Musica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+            </nav>
+        <!-- <nav class="header__nav">
             <ul class="header__ul animate__animated animate__pulse">
                 <li class="header__li"><a href="../index.html">Inicio</a></li>
                 <li class="header__li"><a href="biblioteca.html">Biblioteca</a></li>
@@ -27,7 +72,7 @@
                 <li class="header__li"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                 <li class="header__li"><a href="contacto.html">Llevame a Contactos</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main class="main__ppal-musica">
         <h2>Relajate mientras lees.</h2>

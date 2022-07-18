@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../resources/logo.ico" type="image/x-icon">
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Fuentes Google -->
@@ -19,45 +19,148 @@
 </head>
 <body>
     <header class="header__ppal">
-        <nav class="header__nav">
-            <ul class="header__ul animate__animated animate__pulse">
-                <li class="header__li"><a href="../index.html">Inicio</a></li>
-                <li class="header__li"><a href="#">Biblioteca</a></li>
-                <li class="header__li"><a href="musica.html">Musica</a></li>
-                <li class="header__li"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li class="header__li"><a href="contacto.html">Llevame a Contactos</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg" style="background-color: #d4d5d6;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/logo.ico" alt="" width="30" height="24">
+                    BookStore
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Biblioteca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="musica.html">Musica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+            </nav>
     </header>
     <main class="main__ppal-biblio">
-        <h2>Bienvenido a la Biblioteca</h2>
         <h2>Generos</h2>
-        <section class="main__biblio">
-            <article class="main__generos">
-                <img class="main__img-biblio" src="../resources/fantasia.jpg" alt="castillo de fantasia">
-                <h3>Fantasia</h3>
-            </article>
-            <article class="main__generos">
-                <img class="main__img-biblio" src="../resources/terror.jpg" alt="castillo de fantasia">
-                <h3>Terror</h3>
-            </article>
-            <article class="main__generos">
-                <img class="main__img-biblio" src="../resources/aventura.jpg" alt="castillo de fantasia">
-                <h3>Aventura</h3>
-            </article>
-            <article class="main__generos">
-                <img class="main__img-biblio" src="../resources/autoayuda.jpg" alt="castillo de fantasia">
-                <h3>Autoayuda</h3>
-            </article>
-            <article class="main__generos">
-                <img class="main__img-biblio" src="../resources/dummies.jpg" alt="castillo de fantasia">
-                <h3>For Dummies</h3>
-            </article>
-            <article class="main__generos">
-                <img class="main__img-biblio" src="../resources/romance.jpg" alt="castillo de fantasia">
-                <h3>Romance</h3>
-            </article>
-        </section>
+        <div class="biblio__acordeon">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        #Aventura
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">La idea de aventura se vincula a una experiencia que acarrea ciertos riesgos y cuyo protagonista puede estar a merced de sucesos imprevisibles. Las aventuras pueden comenzar de forma espontánea e involuntaria, sin que la persona las busque. En otros casos, el sujeto impulsará una acción para tratar de vivir la aventura en cuestión. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        #Ciencia Ficción
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">La ciencia ficción es un género cuyos contenidos se encuentran basados en supuestos logros científicos o técnicos que podrían lograrse en el futuro. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        #Policiaca
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">La trama consiste generalmente en la resolución de un misterio de tipo criminal. El protagonista en la novela policíaca es normalmente un policía o un detective, habitualmente recurrente a lo largo de varias novelas del mismo autor, que, mediante la observación, el análisis y el razonamiento deductivo, consigue finalmente averiguar cómo, dónde, por qué se produjo el crimen y quién lo perpetró. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        #Terror y Misterio
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Este tipo de relatos a menudo tiene presencia de: Fantasmas, vampiros, monstruos u otras criaturas sobrenaturales. Asesinatos, robos, violaciones o situaciones traumáticas o angustiantes. Elementos mágicos, sobrenaturales, demoníacos o religiosos. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        #Romántica
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">La novela romántica es aquella que aborda temas como el amor, la muerte, la sensación de incomprensión o el rechazo al mundo. Suele remontarse a épocas pasadas o lugares lejanos o imaginarios. En este tipo de novela, el mundo emocional de los personajes es central para narrar sus pasiones y los sentimientos de melancolía o soledad que los agobian. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        #Humor
+                    </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">El autor crea conscientemente efectos de carácter cómico dentro de su obra y a la vez, expresa su posición ante ella. Suele recurrir a la ironía, sátira, las parodias o el sarcasmo a lo largo de la obra. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        #Poesía
+                    </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">La poesía se caracteriza por ser la más depurada manifestación, por medio de la palabra, de los sentimientos, emociones y reflexiones que puede expresar el ser humano en torno a la belleza, el amor, la vida o la muerte. Como tal, puede estar compuesta tanto en verso como en prosa. La poesía moderna se caracteriza por el predominio del verso libre, donde el autor tiene libertad total para disponer y organizar los versos en el texto, y buscar su propio ritmo, sin ataduras de rimas o métricas. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        #Mitología
+                    </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Género y tradición que expresa el estudio del cuerpo mítico de una cultura perteneciente a una tradición religiosa o cultural particular de una manera autoritaria y oficial a través de una narrativa simbólica, iconografía o caracterización usualmente a través de las formas y personalidades de las deidades. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        #Teatro
+                    </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Se consideran obras teatrales todas las obras literarias cuya acción progresa por medio del diálogo de los personajes sin que intervenga el narrador. El teatro se escribe para ser representado. <a href="">Ver más.</a></div>
+                    </div>
+                </div>
+                </div>
+        </div>
     </main>
     <footer class="footer__ppal"><!-- Pie de pagina -->
         <section class="footer__nav">

@@ -5,12 +5,12 @@
 }
 /* Pagina de Inicio */
 .header__ppal{
-    background-color: #3b9eac /* #F6E3C5 */;
+    background-color: #858585 /* #F6E3C5 */;
     position: sticky;
     top: 0px;
     z-index: 1;
 }
-.header__nav{
+/* .header__nav{
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +19,7 @@
     justify-content:space-around;
     margin: 20px;
     flex-wrap: wrap;
-}
+} */
 .header__li{
     list-style: none;
     font-family: 'Arima', cursive;
@@ -70,23 +70,15 @@
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(to bottom, white, grey);
     flex-direction: column;
-
 }
 .main__biblio{
     display: flex;
-    justify-content:space-around;
+/*     justify-content:space-around; */
     flex-wrap: wrap;
 }
-.main__generos{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    align-items: center;
-}
-.main__img-biblio{
-    width: 300px;
-    height: 250px;
+.biblio__acordeon{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 /* Pagina de Musica */
 .main__ppal-musica{
