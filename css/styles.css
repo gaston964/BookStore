@@ -191,10 +191,10 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-.contacto__entrada{
+/* .contacto__entrada{
     display: flex;
     flex-wrap: wrap;
-}
+} */
 .contacto__contenido{
 /*     border: black solid 2px; */
     width: 620px;

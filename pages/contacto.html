@@ -29,80 +29,55 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="biblioteca.html">Biblioteca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="musica.html">Musica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="biblioteca.html">Biblioteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musica.html">Musica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li> -->
                     </ul>
-                    </li> -->
-                </ul>
-                <form class="d-flex" role="search">
+                    <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    </form>
                 </div>
             </div>
-            </nav>
-        <!-- <nav class="header__nav">
-            <ul class="header__ul animate__animated animate__pulse">
-                <li class="header__li"><a href="../index.html">Inicio</a></li>
-                <li class="header__li"><a href="biblioteca.html">Biblioteca</a></li>
-                <li class="header__li"><a href="musica.html">Musica</a></li>
-                <li class="header__li"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li class="header__li"><a href="#">Llevame a Contactos</a></li>
-            </ul>
-        </nav> -->
+        </nav>
     </header>
     <main class="main__contacto">
-        <h2>Estas en Contacto</h2>
         <h3>Puedes contactarnos si quieres!</h3>
         <section class="contacto__entrada">
-            <article class="contacto__contenido">
-                <form method="post" class="main__form">
-                    <div>
-                        <label>Nombre</label><!-- Muestra la palabra antes del input -->
-                        <input><!-- Obtener info del usuario en una sola linea -->
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <input type="email">
-                    </div>
-                    <label>Dejanos tu comentario!</label>
-                    <div>
-                        <textarea></textarea><!-- Obtener info del usuario en varias lineas, NUNCA info sensible -->
-                    </div>
-                    <div>
-                        <input type="button" value="Enviar">
-                        <input type="button" value="Borrar">
-                    </div>
-                </form>
-            </article>
-            <article class="contacto__contenido">
-                <h4>Texto Informativo</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iste qui cupiditate ipsam autem quod neque vitae suscipit laborum nulla. Itaque odit illum atque deleniti quia exercitationem praesentium odio nisi?
-                Ut, sequi! Praesentium inventore, harum quos minima recusandae tenetur atque velit nisi incidunt natus facilis aspernatur veniam laborum itaque est consequatur dolor saepe earum beatae sequi, temporibus nam quaerat iure!</p>
-            </article>
+            <form class="contacto__form">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
         </section>
     </main>
     <footer class="footer__ppal"><!-- Pie de pagina -->
