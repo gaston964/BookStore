@@ -5,37 +5,26 @@
 }
 /* Pagina de Inicio */
 .header__ppal{
-    background-color: #858585 /* #F6E3C5 */;
+    background-color: #858585;
     position: sticky;
     top: 0px;
     z-index: 1;
 }
-/* .header__nav{
-    display: flex;
-    flex-direction: column;
-}
-.header__ul{
-    display: flex;
-    justify-content:space-around;
-    margin: 20px;
-    flex-wrap: wrap;
-} */
 .header__li{
     list-style: none;
-    font-family: 'Arima', cursive;
+    font-family: 'Playfair Display', serif;
     color: rgb(0, 0, 0);
     font-weight:  bolder;
 }
 .header__li a{
-    /* color: whitesmoke; */
     text-decoration: none;
-    font-family: 'Arima', cursive;
+    font-family: 'Playfair Display', serif;
     color: rgb(0, 0, 0);
 }
 .main__ppal{
     display: flex;
     color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-image: linear-gradient(to bottom, white, grey);
 }
 .main__entrada{
@@ -63,28 +52,34 @@
     height: auto;
     padding: 15px;
 }
+body{
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+.fuente{
+    font-family: 'Playfair Display', serif;
+}
 /* Pagina de biblioteca */
 .main__ppal-biblio{
     display: flex;
-    color: rgb(0, 0, 0);
-    font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(to bottom, white, grey);
     flex-direction: column;
 }
 .main__biblio{
     display: flex;
-/*     justify-content:space-around; */
     flex-wrap: wrap;
 }
 .biblio__acordeon{
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 /* Pagina de Musica */
 .main__ppal-musica{
     display: flex;
     color: black;
-    font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(to bottom, white, grey);
     flex-direction: column;
 }
@@ -109,7 +104,6 @@
 .main__sobrenos{
     display: flex;
     color: rgb(0, 0, 0);
-    font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(to bottom, white, grey);
     flex-direction: column;
     align-items: center;
@@ -164,7 +158,7 @@
 .sobrenos__info{
     padding: 20px;
     color: rgb(0, 0, 0);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .sobrenos__img--1{
     width: auto;
@@ -186,26 +180,9 @@
 .main__contacto{
     display: flex;
     color: rgb(0, 0, 0);
-    font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(to bottom, white, grey);
     flex-direction: column;
     flex-wrap: wrap;
-}
-/* .contacto__entrada{
-    display: flex;
-    flex-wrap: wrap;
-} */
-.contacto__contenido{
-/*     border: black solid 2px; */
-    width: 620px;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: justify;
-}
-.main__form{
-    font-family: 'Open Sans', sans-serif;
 }
 /* Footer en Comun */
 .footer__ppal{
@@ -248,10 +225,10 @@
 }
 .footer__derechos{
     color: whitesmoke;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
-/* font-family: 'Arima', cursive;
-font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif;*/
 /* MEDIA QUERIE PARA CELULAR */
 @media (min-width:320px) and (max-width:575px){
     .header__ul{
@@ -336,9 +313,9 @@ font-family: 'Open Sans', sans-serif; */
         text-align: center;
     }
 /* Media Querie para Contacto */
-    .contacto__contenido{
-        width: 80%;
-        }
+.ocultar{
+    display: none;
+}
 }
 /* MEDIA QUERIE PARA TABLET */
 @media (min-width:576px) and (max-width:992px){
@@ -392,7 +369,4 @@ font-family: 'Open Sans', sans-serif; */
         width: 80%;
     }
 /* Media Querie para Contacto */
-    .contacto__contenido{
-        width: 80%;
-        }
 }
