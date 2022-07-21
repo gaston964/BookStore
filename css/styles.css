@@ -68,27 +68,11 @@ h1{
 }
 /* Pagina de Musica */
 .main__ppal-musica{
-    display: flex;
     color: black;
     background-image: linear-gradient(to bottom, white, grey);
-    flex-direction: column;
-}
-.main__musica{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 .mainmusica__titulos{
     margin-top: 20px;
-}
-.mainmusica__playlist{
-    width: 520px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid;
 }
 /* Pagina Sobre Nosotros */
 .main__sobrenos{
