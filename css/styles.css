@@ -32,6 +32,10 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+.card__img{
+    width: auto;
+    height: 280px;
+}
 .main__titulosppal{
     width: 300px;
     margin: 30px;
@@ -40,7 +44,7 @@
     align-items: center;
     border: 2px solid;
 }
-.main__titulosppal:hover{
+.card:hover{
     transform: scale(1.05, 1.05);
 }
 .main__titulosinfo{

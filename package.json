@@ -1,0 +1,23 @@
+{
+  "name": "29295",
+  "version": "1.0.0",
+  "description": "<h1>BookStore</h1>\r <p>Este sitio es para descargar y leer libros en formato PDF</p>\r <h2>Tecnologias usadas</h2>\r <ul>\r <li>HTML5</li>\r <li>CSS3</li>\r <li>Bootstrap</li>\r <li>SASS</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaston964/BookStore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaston964/BookStore/issues"
+  },
+  "homepage": "https://github.com/gaston964/BookStore#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
