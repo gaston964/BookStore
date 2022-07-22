@@ -86,7 +86,7 @@ h1 {
   background-image: linear-gradient(to bottom, white, grey);
   flex-direction: column;
   flex-wrap: wrap;
-  height: 95vh; }
+  height: 75vh; }
 
 /* Footer en Comun */
 .footer__ppal {
