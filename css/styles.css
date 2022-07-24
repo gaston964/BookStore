@@ -10,17 +10,6 @@
   top: 0px;
   z-index: 1; }
 
-.header__li {
-  list-style: none;
-  font-family: 'Playfair Display', serif;
-  color: black;
-  font-weight: bolder; }
-
-.header__li a {
-  text-decoration: none;
-  font-family: 'Playfair Display', serif;
-  color: black; }
-
 .main__ppal {
   display: flex;
   color: black;
@@ -45,6 +34,9 @@ h1 {
   font-family: 'Playfair Display', serif; }
 .btn__pages{
   background-color: #92908f;
+}
+.nav-item a:visited{
+  color: purple;
 }
 /* Pagina de biblioteca */
 .main__ppal-biblio {
@@ -91,7 +83,19 @@ h1 {
 /* Footer en Comun */
 .footer__ppal {
   background-image: linear-gradient(to bottom, grey, #111111); }
+.footer__li {
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-weight: bolder; }
 
+.footer__li a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  color: black; }
+.footer__li a:visited{
+  color: rgb(74, 23, 116);
+  }
 .footer__nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
