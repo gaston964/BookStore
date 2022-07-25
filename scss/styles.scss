@@ -10,17 +10,6 @@
     top: 0px;
     z-index: 1;
 }
-.header__li{
-    list-style: none;
-    font-family: 'Playfair Display', serif;
-    color: rgb(0, 0, 0);
-    font-weight:  bolder;
-}
-.header__li a{
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-    color: rgb(0, 0, 0);
-}
 .main__ppal{
     display: flex;
     color: black;
@@ -31,16 +20,13 @@
     width: auto;
     height: 280px;
 }
-/* .main__titulosppal{
-    width: 300px;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid;
-} */
 .card:hover{
     transform: scale(1.05, 1.05);
+}
+.nav-item:visited {
+    color: purple; }
+.btn__pages{
+    background-color: #858585;
 }
 body{
     color: rgb(0, 0, 0);
@@ -57,22 +43,20 @@ h1{
     display: flex;
     background-image: linear-gradient(to bottom, white, grey);
     flex-direction: column;
+    &__biblio{
+        display: flex;
+        flex-wrap: wrap;
+        &__acordeon{
+            margin-left: 15px;
+            margin-right: 35px;
+        }
+    }
 }
-.main__biblio{
-    display: flex;
-    flex-wrap: wrap;
-}
-.biblio__acordeon{
-    margin-left: 15px;
-    margin-right: 35px;
-}
-/* Pagina de Musica */
-.main__ppal-musica{
+
+/* Pagina de Membresia */
+.main__ppal-membresia{
     color: black;
     background-image: linear-gradient(to bottom, white, grey);
-}
-.mainmusica__titulos{
-    margin-top: 20px;
 }
 /* Pagina Sobre Nosotros */
 .main__sobrenos{
@@ -98,32 +82,45 @@ h1{
 .footer__ppal{
     background-image: linear-gradient(to bottom, grey,rgb(17, 17, 17));
 }
+
 .footer__nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    .footernav{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .footerredes{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: center;
+        align-items: center;
+    }
+    .footerder{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        align-self: flex-end;
+        align-items: flex-end;
+        margin-left: 165px;
+    }
 }
-.footernav{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.footerredes{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
-    align-items: center;
-}
-.footerder{
-    grid-column: 3/4;
-    grid-row: 1/2;
-    align-self: flex-end;
-    align-items: flex-end;
-    margin-left: 165px;
-}
+
 .footer__ul{
     margin: 20px;
+}
+.footer__li{
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+    color: rgb(0, 0, 0);
+    font-weight:  bolder;
+    & a{
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+        color: rgb(0, 0, 0);
+    }
 }
 .footer__redes{
     display: flex;
