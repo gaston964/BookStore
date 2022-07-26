@@ -1,0 +1,18 @@
+/* Pagina de Inicio */
+.main__ppal{
+    display: flex;
+    color: black;
+    font-family: $fuente-ppal;
+    background-image: $fondo;
+}
+.card__img{
+    width: auto;
+    height: 280px;
+}
+.card:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.btn__pages{
+    background-color: #858585;
+}

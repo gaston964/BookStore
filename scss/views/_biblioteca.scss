@@ -1,0 +1,14 @@
+/* Pagina de biblioteca */
+.main__ppal-biblio{
+    display: flex;
+    background-image: $fondo;
+    flex-direction: column;
+    &__biblio{
+        display: flex;
+        flex-wrap: wrap;
+        &__acordeon{
+            margin-left: 15px;
+            margin-right: 35px;
+        }
+    }
+}

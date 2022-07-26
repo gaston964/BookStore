@@ -1,0 +1,9 @@
+/* Pagina de Contacto */
+.main__contacto{
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-image: $fondo;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 95vh;
+}

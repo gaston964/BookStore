@@ -1,84 +1,6 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box; }
-
-/* Pagina de Inicio */
-.header__ppal {
-  background-color: #858585;
-  position: sticky;
-  top: 0px;
-  z-index: 1; }
-
-.main__ppal {
-  display: flex;
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
-  background-image: linear-gradient(to bottom, white, grey); }
-
-.card__img {
-  width: auto;
-  height: 280px; }
-
-.card:hover {
-  transform: scale(1.05, 1.05); }
-
-.nav-item:visited {
-  color: purple; }
-
-.btn__pages {
-  background-color: #858585; }
-
-body {
-  color: black;
-  font-family: 'Ubuntu', sans-serif; }
-
-h1 {
-  font-family: 'Playfair Display', serif; }
-
-.fuente {
-  font-family: 'Playfair Display', serif; }
-
-/* Pagina de biblioteca */
-.main__ppal-biblio {
-  display: flex;
-  background-image: linear-gradient(to bottom, white, grey);
-  flex-direction: column; }
-  .main__ppal-biblio__biblio {
-    display: flex;
-    flex-wrap: wrap; }
-    .main__ppal-biblio__biblio__acordeon {
-      margin-left: 15px;
-      margin-right: 35px; }
-
-/* Pagina de Membresia */
-.main__ppal-membresia {
-  color: black;
-  background-image: linear-gradient(to bottom, white, grey); }
-
-/* Pagina Sobre Nosotros */
-.main__sobrenos {
-  display: flex;
-  color: black;
-  background-image: linear-gradient(to bottom, white, grey);
-  flex-direction: column;
-  align-items: center; }
-
-.img__sobrenos {
-  height: 450px; }
-
-/* Pagina de Contacto */
-.main__contacto {
-  display: flex;
-  color: black;
-  background-image: linear-gradient(to bottom, white, grey);
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 95vh; }
-
 /* Footer en Comun */
 .footer__ppal {
-  background-image: linear-gradient(to bottom, grey, #111111); }
+  background-image: linear-gradient(to bottom, white, grey); }
   .footer__ppal .footer__nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -103,12 +25,12 @@ h1 {
       margin: 20px; }
       .footer__ppal .footer__nav .footer__ul .footer__li {
         list-style: none;
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
         color: black;
         font-weight: bolder; }
         .footer__ppal .footer__nav .footer__ul .footer__li a {
           text-decoration: none;
-          font-family: 'Playfair Display', serif;
+          font-family: "Playfair Display", serif;
           color: black; }
     .footer__ppal .footer__nav .footer__redes {
       display: flex;
@@ -118,10 +40,71 @@ h1 {
         color: whitesmoke; }
     .footer__ppal .footer__nav .footer__derechos {
       color: whitesmoke;
-      font-family: 'Playfair Display', serif; }
+      font-family: "Playfair Display", serif; }
 
-/* font-family: 'Playfair Display', serif;
-font-family: 'Ubuntu', sans-serif;*/
+.header__ppal {
+  background-color: #858585;
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
+
+.nav-item:visited {
+  color: purple; }
+
+/* Pagina de Inicio */
+.main__ppal {
+  display: flex;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(to bottom, white, grey); }
+
+.card__img {
+  width: auto;
+  height: 280px; }
+
+.card:hover {
+  transform: scale(1.05, 1.05); }
+
+.btn__pages {
+  background-color: #858585; }
+
+/* Pagina de biblioteca */
+.main__ppal-biblio {
+  display: flex;
+  background-image: linear-gradient(to bottom, white, grey);
+  flex-direction: column; }
+  .main__ppal-biblio__biblio {
+    display: flex;
+    flex-wrap: wrap; }
+    .main__ppal-biblio__biblio__acordeon {
+      margin-left: 15px;
+      margin-right: 35px; }
+
+/* Pagina de Contacto */
+.main__contacto {
+  display: flex;
+  color: black;
+  background-image: linear-gradient(to bottom, white, grey);
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 95vh; }
+
+/* Pagina de Membresia */
+.main__ppal-membresia {
+  color: black;
+  background-image: linear-gradient(to bottom, white, grey); }
+
+/* Pagina Sobre Nosotros */
+.main__sobrenos {
+  display: flex;
+  color: black;
+  background-image: linear-gradient(to bottom, white, grey);
+  flex-direction: column;
+  align-items: center; }
+
+.img__sobrenos {
+  height: 450px; }
+
 /* MEDIA QUERIE PARA CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
   .header__ul {
@@ -234,3 +217,18 @@ font-family: 'Ubuntu', sans-serif;*/
   .sobrenos__info {
     width: 80%; }
   /* Media Querie para Contacto */ }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  color: black;
+  font-family: "Ubuntu", sans-serif; }
+
+h1 {
+  font-family: "Ubuntu", sans-serif; }
+
+.fuente {
+  font-family: "Playfair Display", serif; }

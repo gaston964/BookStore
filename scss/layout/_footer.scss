@@ -1,0 +1,54 @@
+/* Footer en Comun */
+.footer__ppal{
+    background-image: $fondo;
+    .footer__nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        .footernav{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .footerredes{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            align-self: center;
+            align-items: center;
+        }
+        .footerder{
+            grid-column: 3/4;
+            grid-row: 1/2;
+            align-self: flex-end;
+            align-items: flex-end;
+            margin-left: 165px;
+        }
+        .footer__ul{
+            margin: 20px;
+            .footer__li{
+                list-style: none;
+                font-family: $fuente-sec;
+                color: rgb(0, 0, 0);
+                font-weight:  bolder;
+                & a{
+                    text-decoration: none;
+                    font-family: $fuente-sec;
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+        .footer__redes{
+            display: flex;
+            flex-direction: column;
+            .footer__logos{
+                width: 25px;
+                color: whitesmoke;
+            }
+        }
+        .footer__derechos{
+            color: whitesmoke;
+            font-family: $fuente-sec;
+        }
+    }
+}
