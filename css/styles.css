@@ -79,52 +79,46 @@ h1 {
 /* Footer en Comun */
 .footer__ppal {
   background-image: linear-gradient(to bottom, grey, #111111); }
-
-.footer__nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr; }
-  .footer__nav .footernav {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .footer__nav .footerredes {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
-    align-items: center; }
-  .footer__nav .footerder {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    align-self: flex-end;
-    align-items: flex-end;
-    margin-left: 165px; }
-
-.footer__ul {
-  margin: 20px; }
-
-.footer__li {
-  list-style: none;
-  font-family: 'Playfair Display', serif;
-  color: black;
-  font-weight: bolder; }
-  .footer__li a {
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-    color: black; }
-
-.footer__redes {
-  display: flex;
-  flex-direction: column; }
-
-.footer__logos {
-  width: 25px;
-  color: whitesmoke; }
-
-.footer__derechos {
-  color: whitesmoke;
-  font-family: 'Playfair Display', serif; }
+  .footer__ppal .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; }
+    .footer__ppal .footer__nav .footernav {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .footer__ppal .footer__nav .footerredes {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      align-self: center;
+      align-items: center; }
+    .footer__ppal .footer__nav .footerder {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      align-self: flex-end;
+      align-items: flex-end;
+      margin-left: 165px; }
+    .footer__ppal .footer__nav .footer__ul {
+      margin: 20px; }
+      .footer__ppal .footer__nav .footer__ul .footer__li {
+        list-style: none;
+        font-family: 'Playfair Display', serif;
+        color: black;
+        font-weight: bolder; }
+        .footer__ppal .footer__nav .footer__ul .footer__li a {
+          text-decoration: none;
+          font-family: 'Playfair Display', serif;
+          color: black; }
+    .footer__ppal .footer__nav .footer__redes {
+      display: flex;
+      flex-direction: column; }
+      .footer__ppal .footer__nav .footer__redes .footer__logos {
+        width: 25px;
+        color: whitesmoke; }
+    .footer__ppal .footer__nav .footer__derechos {
+      color: whitesmoke;
+      font-family: 'Playfair Display', serif; }
 
 /* font-family: 'Playfair Display', serif;
 font-family: 'Ubuntu', sans-serif;*/
