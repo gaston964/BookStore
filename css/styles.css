@@ -1,6 +1,6 @@
 /* Footer en Comun */
 .footer__ppal {
-  background-image: linear-gradient(to bottom, white, grey); }
+  background-image: linear-gradient(to bottom, grey, #111111); }
   .footer__ppal .footer__nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

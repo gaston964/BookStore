@@ -1,6 +1,6 @@
 /* Footer en Comun */
 .footer__ppal{
-    background-image: $fondo;
+    background-image: linear-gradient(to bottom, grey,rgb(17, 17, 17));
     .footer__nav{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
