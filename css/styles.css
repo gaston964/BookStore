@@ -20,7 +20,8 @@
       grid-row: 1/2;
       align-self: flex-end;
       align-items: flex-end;
-      margin-left: 165px; }
+      display: flex;
+      flex-direction: column; }
     .footer__ppal .footer__nav .footer__ul {
       margin: 20px; }
       .footer__ppal .footer__nav .footer__ul .footer__li {
@@ -40,7 +41,9 @@
         color: whitesmoke; }
     .footer__ppal .footer__nav .footer__derechos {
       color: whitesmoke;
-      font-family: "Playfair Display", serif; }
+      font-family: "Playfair Display", serif;
+      display: flex;
+      flex-wrap: wrap; }
 
 .header__ppal {
   background-color: #858585;
@@ -127,10 +130,10 @@
     align-items: center; }
   .footerder {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
     align-self: flex-start;
     align-items: flex-start;
-    margin-left: 0px; }
+    margin-left: auto; }
   /* Media Querie para Contacto */
   .ocultar {
     display: none; } }

@@ -14,15 +14,14 @@
         .footerredes{
             grid-column: 2/3;
             grid-row: 1/2;
-            align-self: center;
-            align-items: center;
+            @include align(center, center);
         }
         .footerder{
             grid-column: 3/4;
             grid-row: 1/2;
-            align-self: flex-end;
-            align-items: flex-end;
-            margin-left: 165px;
+            @include align(flex-end, flex-end);
+            display: flex;
+            flex-direction: column;
         }
         .footer__ul{
             margin: 20px;
@@ -49,6 +48,8 @@
         .footer__derechos{
             color: whitesmoke;
             font-family: $fuente-sec;
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 }

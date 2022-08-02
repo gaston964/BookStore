@@ -22,9 +22,9 @@
 }
 .footerder{
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
     @include align(flex-start, flex-start);
-    margin-left: 0px;
+    margin-left: auto;
 }
 /* Media Querie para Contacto */
 .ocultar{
