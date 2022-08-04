@@ -8,4 +8,13 @@
 }
 .img__sobrenos{
     height: 450px;
+    width: 450px;
+    border-radius: 10%;
+    box-shadow: 0 0 20px #333;
+}
+.sobrenos__integrantes{
+    display: flex;
+    justify-content: center;
+    @include align(center,center);
+
 }

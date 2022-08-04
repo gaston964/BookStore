@@ -107,7 +107,16 @@
   align-items: center; }
 
 .img__sobrenos {
-  height: 450px; }
+  height: 450px;
+  width: 450px;
+  border-radius: 10%;
+  box-shadow: 0 0 20px #333; }
+
+.sobrenos__integrantes {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center; }
 
 /* MEDIA QUERIE PARA CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
