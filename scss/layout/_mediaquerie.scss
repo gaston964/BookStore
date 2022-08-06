@@ -6,27 +6,26 @@
     }
 /* Media Querie para Footer en gral */
 .footer__nav{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
-    .footernav{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.footernav{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    }
-    .footerredes{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        @include align(center, center);
-    }
-    .footerder{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        @include align(flex-start, flex-start);
-        margin-left: auto;
-    }
 }
-
+.footerredes{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    @include align(center, center);
+}
+.footerder{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    @include align(flex-start, flex-start);
+    margin-left: auto;
+}
 /* Media Querie para Contacto */
 .ocultar{
     display: none;
