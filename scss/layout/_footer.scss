@@ -4,21 +4,10 @@
     .footer__nav{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        .footernav{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        }
         .footerredes{
-            grid-column: 2/3;
-            grid-row: 1/2;
             @include align(center, center);
         }
         .footerder{
-            grid-column: 3/4;
-            grid-row: 1/2;
             @include align(flex-end, flex-end);
             display: flex;
             flex-direction: column;
@@ -29,17 +18,17 @@
                 list-style: none;
                 font-family: $fuente-sec;
                 color: rgb(0, 0, 0);
-                font-weight:  bolder;
                 & a{
                     text-decoration: none;
                     font-family: $fuente-sec;
-                    color: rgb(0, 0, 0);
+                    color: rgb(201, 195, 195);
                 }
             }
         }
         .footer__redes{
             display: flex;
             flex-direction: column;
+            align-items: center;
             .footer__logos{
                 width: 25px;
                 color: whitesmoke;

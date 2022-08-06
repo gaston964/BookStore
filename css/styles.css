@@ -3,21 +3,11 @@
   background-image: linear-gradient(to bottom, grey, #111111); }
   .footer__ppal .footer__nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; }
-    .footer__ppal .footer__nav .footernav {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2; }
+    grid-template-columns: repeat(3, 1fr); }
     .footer__ppal .footer__nav .footerredes {
-      grid-column: 2/3;
-      grid-row: 1/2;
       align-self: center;
       align-items: center; }
     .footer__ppal .footer__nav .footerder {
-      grid-column: 3/4;
-      grid-row: 1/2;
       align-self: flex-end;
       align-items: flex-end;
       display: flex;
@@ -27,15 +17,15 @@
       .footer__ppal .footer__nav .footer__ul .footer__li {
         list-style: none;
         font-family: "Playfair Display", serif;
-        color: black;
-        font-weight: bolder; }
+        color: black; }
         .footer__ppal .footer__nav .footer__ul .footer__li a {
           text-decoration: none;
           font-family: "Playfair Display", serif;
-          color: black; }
+          color: #c9c3c3; }
     .footer__ppal .footer__nav .footer__redes {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
       .footer__ppal .footer__nav .footer__redes .footer__logos {
         width: 25px;
         color: whitesmoke; }
@@ -137,24 +127,24 @@
     flex-grow: 0; }
   /* Media Querie para Footer en gral */
   .footer__nav {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto; }
-  .footernav {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .footerredes {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
-    align-items: center; }
-  .footerder {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    align-self: flex-start;
-    align-items: flex-start;
-    margin-left: auto; }
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+    .footer__nav .footernav {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .footer__nav .footerredes {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: center;
+      align-items: center; }
+    .footer__nav .footerder {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      align-self: flex-start;
+      align-items: flex-start;
+      margin-left: auto; }
   /* Media Querie para Contacto */
   .ocultar {
     display: none; } }
