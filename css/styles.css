@@ -16,11 +16,14 @@
 .footer__redes {
   display: flex;
   flex-direction: column;
+  align-self: center;
   align-items: center; }
   .footer__redes .footer__logos {
     width: 25px;
     color: whitesmoke;
     margin-top: 15px; }
+  .footer__redes .footer__logos--txt {
+    color: #cacaca; }
 
 .footer__derechos {
   color: whitesmoke;
@@ -59,12 +62,24 @@
   display: flex;
   background-image: linear-gradient(to bottom, white, grey);
   flex-direction: column; }
-  .main__ppal-biblio__biblio {
-    display: flex;
-    flex-wrap: wrap; }
-    .main__ppal-biblio__biblio__acordeon {
-      margin-left: 15px;
-      margin-right: 35px; }
+  .main__ppal-biblio .biblio__acordeon {
+    margin-left: 15px; }
+
+.biblio__img {
+  width: 600px;
+  height: 700px; }
+
+.biblio__text {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder; }
+
+.biblio__text--dest {
+  font-family: "Playfair Display", serif;
+  font-weight: bold; }
 
 /* Pagina de Contacto */
 .main__contacto {
@@ -91,55 +106,42 @@
   flex-direction: column;
   align-self: center;
   align-items: center; }
-
-.sobrenos__container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
-.sobrenos__img {
-  height: 350px;
-  width: 350px; }
-
-.sobrenos__card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 350px;
-  background-color: rgba(241, 241, 241, 0.37); }
-
-.sobrenos__card:hover {
-  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2); }
-
-.sobrenos__container--card {
-  padding: 2px 16px; }
+  .main__sobrenos .sobrenos__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .main__sobrenos .sobrenos__container .sobrenos__card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 350px;
+      background-color: rgba(241, 241, 241, 0.37); }
+      .main__sobrenos .sobrenos__container .sobrenos__card:hover {
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2); }
+      .main__sobrenos .sobrenos__container .sobrenos__card__container--card {
+        padding: 2px 16px; }
+      .main__sobrenos .sobrenos__container .sobrenos__card .sobrenos__img {
+        height: 350px;
+        width: 350px; }
 
 /* MEDIA QUERIE PARA CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
   .header__ul {
     flex-direction: column;
     flex-grow: 0; }
-  /* Media Querie para Footer en gral */
-  .footer__nav {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto; }
-  .footernav {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .footerredes {
-    grid-column: 2/3;
-    grid-row: 1/2;
+  .footer__ul {
+    display: flex;
+    flex-direction: column;
     align-self: center;
     align-items: center; }
-  .footerder {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    align-self: flex-start;
-    align-items: flex-start;
-    margin-left: auto; }
-  /* Media Querie para Contacto */
+  .footer__redes {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center; }
+  /* Media Querie para Contacto,Membresia y Bilbioteca */
   .ocultar {
+    display: none; }
+  .ocultar__biblio {
     display: none; } }
 
 /* MEDIA QUERIE PARA TABLET */
@@ -158,7 +160,10 @@ body {
   font-family: "Ubuntu", sans-serif; }
 
 h1 {
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Playfair Display", serif; }
+
+h3 {
+  font-family: "Playfair Display", serif; }
 
 .fuente {
   font-family: "Playfair Display", serif; }

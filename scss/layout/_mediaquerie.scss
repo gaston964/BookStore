@@ -1,33 +1,24 @@
 /* MEDIA QUERIE PARA CELULAR */
 @media (min-width:320px) and (max-width:575px){
-    .header__ul{
-        flex-direction: column;
-        flex-grow: 0;
-    }
-/* Media Querie para Footer en gral */
-.footer__nav{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+.header__ul{
+    flex-direction: column;
+    flex-grow: 0;
 }
-.footernav{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.footer__ul{
+    display: flex;
+    flex-direction: column;
+    @include align(center,center);
 }
-.footerredes{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    @include align(center, center);
+.footer__redes{
+    display: flex;
+    flex-direction: column;
+    @include align(center,center);
 }
-.footerder{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    @include align(flex-start, flex-start);
-    margin-left: auto;
-}
-/* Media Querie para Contacto */
+/* Media Querie para Contacto,Membresia y Bilbioteca */
 .ocultar{
+    display: none;
+}
+.ocultar__biblio{
     display: none;
 }
 }

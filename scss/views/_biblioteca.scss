@@ -3,12 +3,22 @@
     display: flex;
     background-image: $fondo;
     flex-direction: column;
-    &__biblio{
-        display: flex;
-        flex-wrap: wrap;
-        &__acordeon{
+        .biblio__acordeon{
             margin-left: 15px;
-            margin-right: 35px;
         }
-    }
+}
+.biblio__img{
+    width: 600px;
+    height: 700px;
+}
+.biblio__text{
+    display: flex;
+    @include align(center,center);
+    margin-top: 50px;
+    font-family: $fuente-sec;
+    font-weight: bolder;
+}
+.biblio__text--dest{
+    font-family: $fuente-sec;
+    font-weight: bold;
 }
